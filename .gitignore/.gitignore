@@ -1,0 +1,25 @@
+выфSELECT name, shop_name FROM products
+  where rate > 7 ;
+
+SELECT name , price from products
+    where price >= 50 ;
+
+SELECT name , rate FROM products
+    where name='Pie'
+    and  rate >5 ;
+
+SELECT name , rate FROM products
+    where rate > 3
+    or price < 100 ;
+
+SELECT name , price , rate FROM products
+    where name='Dicsi'
+    or name ='Perecrestok'
+    and price >50 ;
+
+SELECT name FROM products
+    where name like '%ie';
+
+SELECT name , rate FROM products
+    where rate in ( 7,9,10);
+    
